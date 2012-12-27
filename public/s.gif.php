@@ -6,6 +6,5 @@ $logHandle = fopen($logFile, 'w');
 
 fwrite($logHandle, json_encode($_GET));
 
-echo json_encode($_GET);
-//header('Content-Type: image/gif');
-//echo file_get_contents(__DIR__. '/s.gif');
+header('Content-Type: image/gif');
+echo file_get_contents(__DIR__. '/s.gif');
